@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/3dmodelingproject/static/js/main.ab6cb489.js",
-    "static/js/787.515b03a8.chunk.js": "/3dmodelingproject/static/js/787.515b03a8.chunk.js",
-    "index.html": "/3dmodelingproject/index.html",
-    "main.ab6cb489.js.map": "/3dmodelingproject/static/js/main.ab6cb489.js.map",
-    "787.515b03a8.chunk.js.map": "/3dmodelingproject/static/js/787.515b03a8.chunk.js.map"
+    "main.js": "/testing3js/static/js/main.063f7f57.js",
+    "static/js/787.515b03a8.chunk.js": "/testing3js/static/js/787.515b03a8.chunk.js",
+    "index.html": "/testing3js/index.html",
+    "main.063f7f57.js.map": "/testing3js/static/js/main.063f7f57.js.map",
+    "787.515b03a8.chunk.js.map": "/testing3js/static/js/787.515b03a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ab6cb489.js"
+    "static/js/main.063f7f57.js"
   ]
 }
