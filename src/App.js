@@ -22,7 +22,7 @@ function Tetrahedron(props) {
 
 function ComplexShape() {
   const group = useRef();
-  const color = new THREE.Color(0.63, 0.67, 0.73); // Ethereum logo color
+  const color = new THREE.Color(0, 0.5, 0); // Ethereum logo color
   const positions = useMemo(() => JSON.parse(localStorage.getItem('positions')) || [], []);
   const rotations = useMemo(() => JSON.parse(localStorage.getItem('rotations')) || [], []);
 
@@ -61,7 +61,7 @@ function App() {
 
   useEffect(() => {
     if (isLoading) {
-      const positions = [[0, 1, 0], [1, 0, 0]];
+      const positions = [[0, 0, 0], [0, 0, 0]];
       const rotations = [[0, 0, 0], [0, Math.PI/2, 0]];
       localStorage.setItem('positions', JSON.stringify(positions));
       localStorage.setItem('rotations', JSON.stringify(rotations));
@@ -81,15 +81,30 @@ function App() {
   }, [isLoading, toast]);
 
   return (
-    <Flex direction="column" p={8} alignItems="center">
+    <Flex
+      direction="column"
+      p={8}
+      alignItems="center"
+      bgGradient="linear(to-b, white, pink)"
+      minHeight="100vh"
+    >
       <Heading mb={8}>Nika's NFT 3D Model Generator</Heading>
-      <Text mb={4}>Enter your prompt to generate a custom 3D model for you NFT.</Text>
+      <Text mb={4}>Enter your prompt to generate a custom 3D model for your NFT.</Text>
 
       <Box w="sm">
         <form onSubmit={handleSubmit}>
           <FormControl id="prompt">
             <FormLabel>Enter your prompt</FormLabel>
-            <Input type="text" value={input} onChange={e => setInput(e.target.value)} />
+            <Input
+              type="text"
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              bg="white"
+              border="1px solid gray"
+              borderRadius="md"
+              py={2}
+              px={3}
+            />
           </FormControl>
           <Button mt={4} colorScheme="teal" type="submit" w="full">
             Generate
@@ -100,7 +115,7 @@ function App() {
       {isLoading && <Spinner mt={4} />}
 
       {showModel && (
-        <Box mt={8}>
+        <Box mt={8} width="100%" height="500px">
           <Canvas camera={{ position: [0, 0, 5] }}>
             <Controls />
             <ambientLight />
