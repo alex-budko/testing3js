@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.3284e32d.js",
-    "static/js/787.515b03a8.chunk.js": "/static/js/787.515b03a8.chunk.js",
-    "index.html": "/index.html",
-    "main.3284e32d.js.map": "/static/js/main.3284e32d.js.map",
-    "787.515b03a8.chunk.js.map": "/static/js/787.515b03a8.chunk.js.map"
+    "main.js": "/3dmodelingproject/static/js/main.ab6cb489.js",
+    "static/js/787.515b03a8.chunk.js": "/3dmodelingproject/static/js/787.515b03a8.chunk.js",
+    "index.html": "/3dmodelingproject/index.html",
+    "main.ab6cb489.js.map": "/3dmodelingproject/static/js/main.ab6cb489.js.map",
+    "787.515b03a8.chunk.js.map": "/3dmodelingproject/static/js/787.515b03a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3284e32d.js"
+    "static/js/main.ab6cb489.js"
   ]
 }
