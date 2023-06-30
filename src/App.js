@@ -82,8 +82,8 @@ function App() {
 
   return (
     <Flex direction="column" p={8} alignItems="center">
-      <Heading mb={8}>Nika's 3D Model Generator</Heading>
-      <Text mb={4}>Enter your prompt to generate a custom 3D model.</Text>
+      <Heading mb={8}>Nika's NFT 3D Model Generator</Heading>
+      <Text mb={4}>Enter your prompt to generate a custom 3D model for you NFT.</Text>
 
       <Box w="sm">
         <form onSubmit={handleSubmit}>
